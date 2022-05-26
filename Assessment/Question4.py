@@ -14,3 +14,10 @@ Hint: Use / to shift right by the desired amount. Ex: Shifting 572 right by 2 di
 
 For simplicity, assume any part starts with a non-zero digit. So 0119998888 is not allowed.
  """
+raw_number = int(input())
+
+area_code = raw_number//10000000
+prefix = (raw_number%10000000)//10000
+line_number = raw_number%10000
+
+print('({}) {}-{}'.format(area_code,prefix,line_number))

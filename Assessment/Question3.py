@@ -14,3 +14,10 @@ the output is:
 
 Note: Real per-mile cost would also include maintenance and depreciation.
  """
+miles_per_gallon = float(input())
+dollars_per_gallon = float(input())
+
+dollars_20_miles = (20/miles_per_gallon)*dollars_per_gallon
+dollars_75_miles = (75/miles_per_gallon)*dollars_per_gallon
+dollars_500_miles = (500/miles_per_gallon)*dollars_per_gallon
+print('{:.2f} {:.2f} {:.2f}'.format(dollars_20_miles, dollars_75_miles, dollars_500_miles))

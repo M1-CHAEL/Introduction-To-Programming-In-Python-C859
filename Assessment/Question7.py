@@ -17,3 +17,11 @@ the output is:
 bobby is not a palindrome
 
  """
+
+input_string = str(input())
+reverse_string = input_string[::-1]
+
+if input_string == reverse_string:
+    print('{} is a palindrome'.format(input_string))
+if input_string != reverse_string:
+    print('{} is not a palindrome'.format(input_string))

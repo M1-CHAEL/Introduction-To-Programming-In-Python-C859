@@ -20,3 +20,17 @@ the output of the program is:
 Exception: Negative step count entered.
 
  """
+# Define your method here
+def steps_to_miles(steps):
+    if steps >= 0:
+        miles = steps / 2000
+        return miles
+    elif steps < 0:
+        raise ValueError('Exception: Negative step count entered.')
+
+if __name__ == '__main__':
+    try:
+        steps_in = int(input())
+        print('{:.2f}'.format(steps_to_miles(steps_in)))
+    except ValueError as excpt:
+        print(excpt)

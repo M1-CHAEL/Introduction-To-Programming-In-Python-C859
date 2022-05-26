@@ -18,3 +18,11 @@ the output is:
 
 Second integer can't be less than the first.
  """
+first_integer = int(input())
+second_integer = int(input())
+
+if first_integer > second_integer:
+    print("Second integer can't be less than the first.")
+while first_integer <= second_integer:
+    print(first_integer, end=' ')
+    first_integer += 5

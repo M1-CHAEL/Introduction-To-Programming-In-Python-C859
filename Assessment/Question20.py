@@ -41,3 +41,6 @@ then the program outputs:
 No synonyms for educate begin with a.
 
  """
+synonyms = {}   # Define dictionary
+
+''' Type your code here. '''

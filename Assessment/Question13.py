@@ -12,3 +12,8 @@ ereht olleH
 yeH
 
  """
+text_input = str(input())
+while text_input != 'Done' and text_input != 'done' and text_input != 'd':
+    reverse_text = text_input[::-1]
+    print(reverse_text)
+    text_input = str(input())

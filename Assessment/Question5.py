@@ -15,3 +15,11 @@ the output is:
 
 There are five spaces preceding row one and row 5. There are no spaces preceeding rows 2, 3, and 4.
  """
+body = int(input())
+head = int(input())
+
+print('     {}'.format(head))
+print('{}{}{}{}{}{}{}'.format(body,body,body,body,body,head,head))
+print('{}{}{}{}{}{}{}{}'.format(body,body,body,body,body,head,head,head))
+print('{}{}{}{}{}{}{}'.format(body,body,body,body,body,head,head))
+print('     {}'.format(head))

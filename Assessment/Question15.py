@@ -21,3 +21,7 @@ Number of characters: 46
 String with no whitespace: Theonlythingwehavetofearisfearitself.
 
  """
+def get_num_of_characters(input_str):
+    '''Type your code here'''
+    
+    return

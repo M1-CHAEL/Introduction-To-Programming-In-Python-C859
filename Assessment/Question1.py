@@ -16,3 +16,10 @@ Amount: $1.41
 
 For simplicity, assume input is non-negative.
  """
+
+quarters = float(input())
+dimes = float(input())
+nickels = float(input())
+pennies = float(input())
+total = ((quarters*25)+(dimes*10)+(nickels*10)+pennies)/100
+print(f'Amount: ${total:.2f}')
