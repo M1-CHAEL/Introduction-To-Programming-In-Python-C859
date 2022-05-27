@@ -41,6 +41,23 @@ then the program outputs:
 No synonyms for educate begin with a.
 
  """
-synonyms = {}   # Define dictionary
+values = []
+index = []
 
-''' Type your code here. '''
+with open("educate.txt", "r") as input_file:
+      for line in input_file:
+         values += [line]
+      for string in values:
+         index += (string[0])
+sort_values = [string.split() for string in values]         
+synonyms = dict(zip(index, sort_values))
+
+
+input_value = input()
+input_char = input()
+
+if input_char not in synonyms:
+   print(f'No synonyms for {input_value} begin with {input_char}')
+if input_char in synonyms:
+   for i in synonyms[input_char]:
+      print(i)

@@ -34,7 +34,8 @@ Title: Distant Muses, 2000
 
  """
  # TODO: Import Artist from Artist.py and Artwork from Artwork.py
-
+from Artist import Artist
+from Artwork import Artwork
 if __name__ == "__main__":
     user_artist_name = input()
     user_birth_year = int(input())

@@ -20,5 +20,15 @@ Cat 1
 
  """
 import csv
-
-''' Type your code here. '''
+file = []
+count = ''
+with open("input1.csv", "r") as csv_raw:
+   csv_file = csv.reader(csv_raw,delimiter=',')
+   for row in csv_file:
+      file += row
+   
+   for var in file:
+      if var not in count:
+         print(f'{var} {file.count(var)}')
+         count += var
+      

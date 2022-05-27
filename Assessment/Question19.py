@@ -30,3 +30,23 @@ the output of the program is:
 Input Exception: invalid literal for int() with base 10: '15.5'
 
  """
+from multiprocessing.sharedctypes import Value
+
+
+user_num = int(input())
+div_num = int(input())
+
+try:
+    if div_num == 0:
+        raise ZeroDivisionError('Zero Division Exception: integer division or modulo by zero')
+    if user_num is float:
+        raise ValueError(f"Input Exception: invalid literal for int() with base 10: '{user_num}'")
+    if div_num is float:
+        raise ValueError(f"Input Exception: invalid literal for int() with base 10: '{div_num}'")
+    else:
+        quotient = int(user_num / div_num)
+        print(quotient)
+except ZeroDivisionError as excpt:
+    print(excpt)
+except ValueError as excpt1:
+    print(excpt1)

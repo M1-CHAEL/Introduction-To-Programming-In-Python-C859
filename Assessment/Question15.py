@@ -22,6 +22,13 @@ String with no whitespace: Theonlythingwehavetofearisfearitself.
 
  """
 def get_num_of_characters(input_str):
-    '''Type your code here'''
-    
-    return
+    num = len(input_str)
+    return num
+
+if __name__ == '__main__':
+    string = str(input('Enter a sentence or phrase:\n'))
+    print()
+    print(f'You entered: {string}')
+    print()
+    print(f'Number of characters: {get_num_of_characters(string)}')
+    print(f'String with no whitespace: {string.replace(" ", "")}')

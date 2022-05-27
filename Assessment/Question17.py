@@ -10,7 +10,12 @@ then the returned average will be:
 
  """
 def calc_average(nums):
-    '''Type your code here'''
+    total = 0
+    average = 0
+    for num in nums:
+        total += num
+    average = total / len(nums)
+    return average
     
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5]
